@@ -1,0 +1,285 @@
+/*makes sure the default padding and margin is 0 pixels*/
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+
+}
+
+:root{
+    --background-color:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --button-outline: #f1f1f1;
+}
+
+body{
+    overflow: hidden;
+}
+
+/*default settings for the website background*/
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: var(--background-color);
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+    /*aligns the boxes in the middle*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 50px;
+}
+
+/*flashcard button*/
+.button1 {
+    border:none;
+    border:solid 2px var(--button-outline);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    font-size: 25px;
+    color: var(--button-outline);
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: wavy;
+    display: inline-block;
+    font-size: 30px;
+    width: 250px;
+    height: 120px;
+    
+}
+
+/*means that when you hover over the button, the colours change and effects are added*/
+.button1:hover{
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+    transform: scale(1.1);
+    transition: ease 0.25s;
+}
+
+
+/*The second button*/
+.button2 {
+    border:none;
+    border:solid 2px var(--button-outline);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    font-size: 25px;
+    color: var(--button-outline);
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: wavy;
+    display: inline-block;
+    font-size: 30px;
+    width: 250px;
+    height: 120px;
+    
+   
+}
+
+/*means that when you hover over the button, the colours change and effects are added*/
+.button2:hover{
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+    transform: scale(1.1);
+    transition: ease 0.25s;
+
+}
+
+/*The third button*/
+.button3 {
+    border:none;
+    border:solid 2px var(--button-outline);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    font-size: 25px;
+    color: var(--button-outline);
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: wavy;
+    display: inline-block;
+    font-size: 30px;
+    width: 250px;
+    height: 120px;
+}
+
+/*means that when you hover over the button, the colours change and effects are added*/
+.button3:hover{
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+    transform: scale(1.1);
+    transition: ease 0.25s;
+
+}
+
+/*the styling for the header*/
+.header{
+    width: 100%;
+    height:100px;
+    display: block;
+    background-color: #D2E3FC;
+    user-select: none;
+}    
+/* The styling for the inner header*/
+ .innerheader{
+    width: 1000px;
+    height: 100%;
+    display:block;
+    margin: 0 auto;
+}
+
+/*the styling for the home button meaining its on the right*/
+.navigation{
+    float:right;
+     height:100%;
+}
+
+/*styling for the home button*/
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding-top: 30px;
+}
+
+/*styling for the home button*/
+.navigation a li{
+    display:table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color:white;
+    font-family: 'montserrat';
+    size:16px;
+}
+
+/* increases the size of the home button when you hover over it */
+.navigation a li:hover{
+    color:black;
+    transform: scale(1.25);
+    transition: ease 0.25s;
+}
+/*means that the button stays white no matter what*/
+a.navigation-link {
+    font-family: "montserrat";
+    font-size: 25px;
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+/*means that the larger text stays to the left*/
+.logo{
+    height:100%;
+    display: table;
+    float: left;
+    padding-left: 20px;
+}
+
+/* Styles the Larger text on the left */
+.logo h1{
+    color: white;
+    height:100%;
+    display: table-cell;
+    vertical-align: middle;
+    
+    font-family: 'Montserrat';
+
+}
+
+
+.open-button{
+    position: fixed;
+    font:"montserrat";
+    border: 0;
+    cursor: pointer;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-family: 'montserrat';
+    font-size: 1.5rem;
+    right:100px;
+    top:30px;
+    padding:5px;
+}
+
+.open-button:hover {
+    color:black;
+    transform: scale(1.25);
+    transition: ease 0.25s;
+    border-color: black;
+  
+}
+
+
+.modal {
+    position: fixed;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height:500px;
+    padding: 1em 2em;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    margin: 0 0 0.5rem 0;
+    background-color: #B5DAFC;
+    color:white;
+    font-family: 'montserrat';
+    font-style: normal;
+}
+
+.modal::backdrop {
+    background: black;
+    opacity: 0.4;
+  }
+
+h2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    padding:15px;
+    margin-bottom: 15px;
+    text-decoration: underline white 2px ;
+
+
+}
+
+  form {
+    display: grid;
+    gap: 1em;
+    font-size: 1.4rem;
+  }
+
+input{
+    border-radius: 5px;
+    height: 2rem;
+    padding:5px;
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.login-button{
+    height:50px;
+    background-color: rgba(0,0,0,0.19);
+    color:white;
+    font-family: "montserrat";
+    cursor:pointer;
+    font-size: 1.4rem;
+    border: solid 1px white;
+    margin-top: 35px;
+}
+
+.login-button:hover{
+    transform:scale(1.1);
+    transition:ease-in-out 300ms;
+
+}
+
+.swal-overlay{
+    background-color: rgba(0,0,0,0.4)
+}

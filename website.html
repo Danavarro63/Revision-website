@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> <!-- install a custom font -->
+        <link rel="stylesheet" href=style.css> <!-- links to the css file -->
+        <title>A level computer science revision</title>
+    </head>
+        
+    <body>
+        <header> <!--opens the header -->
+            <div class="header"> <!-- links to the header class within the css file -->
+                <div class = "innerheader"> <!-- links to the inner header class within the css file -->
+                    <div class="logo" > 
+                        <h1>A Level Computer Science revision</h1> <!-- the title for the header-->
+                    </div>
+                    <ul class= "navigation"> <!-- links to the navigation class within the css file -->
+                        <a href="website.html" class = "navigation-link" ><li>home</li></a> <!-- creates the small home button -->
+                    </form>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <button class="open-button">Login Here</button>
+        <dialog class="modal" id="modal"><h2>Login Here</h2>
+        <form class="form" class = "box" method="dialog">
+        <label> username</label>
+        <input type="username" placeholder="username" id = "username">
+        <label> password</label>
+        <input type="password" placeholder="password" id = "password">
+        <button class="login-button" type="submit" onclick="validate()" >Login</button>
+        </form>     
+        </dialog>    
+        <div  class="container"> <!-- links to the container class within the css file -->
+        <form method="get" action="/flashcards.html"> <!-- links the button to the flashcards subpage -->
+        <button class="button1">Flashcards</button></form> <!-- creates the flashcard button -->
+        <form method="get" action="/quiz.html"> <!-- links the button to the quiz subpage -->
+        <button class="button2">Quiz</button></form> <!-- creates the quiz button -->
+        <form method="get" action="/videos.html"> <!-- links the button to the videos subpage -->
+        <button class="button3">Videos</button></form> <!-- creaets the videos button -->
+        </div>
+    </body>
+    <script src="website.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>

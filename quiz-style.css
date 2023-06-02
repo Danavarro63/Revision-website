@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    width:100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-family: "Montserrat";
+    color:black;
+    user-select: none;
+    font-size: 1.4rem;
+}
+
+.header{
+    width: 100%;
+    height:100px;
+    display: block;
+    background-color: #D2E3FC;
+    user-select: none;
+}  
+.innerheader{
+    width: 1000px;
+    height: 100%;
+    display:block;
+    margin: 0 auto;
+}
+
+/*the styling for the home button meaining its on the right*/
+.navigation{
+    float:right;
+     height:100%;
+}
+
+/*styling for the home button*/
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding-top: 30px;
+}
+
+/*styling for the home button*/
+.navigation a li{
+    display:table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color:white;
+    font-family: 'montserrat';
+    size:16px;
+}
+
+.navigation a li:hover{
+    color:black;
+    transform: scale(1.25);
+    transition: ease 0.25s;
+}
+/*means that the button stays white no matter what*/
+a.navigation-link {
+    font-family: "montserrat";
+    font-size: 25px;
+    display: table-cell;
+    vertical-align: middle;
+}
+/*means that the button stays white no matter what*/
+a.navigation-link:link {
+    color: white ;
+   text-decoration: none;
+}
+/*means that the button stays white no matter what*/
+a.navigation-link:visited {
+    color: white ;
+   text-decoration: none;
+}
+/*means that the button stays white no matter what*/
+a.navigation-link:hover{
+    color: white ;
+   text-decoration: none;
+}
+/*means that the button stays white no matter what*/
+a.navigation-link:active {
+    color: white ;
+   text-decoration: none;
+}
+/*means that the larger text stays to the left*/
+.logo{
+    height:100%;
+    display: table;
+    float: left;
+    padding-left: 20px;
+}
+.logo h1{
+    color: white;
+    height:100%;
+    display: table-cell;
+    vertical-align: middle;
+    
+    font-family: 'Montserrat';
+
+}
+
+.questions{
+    height:50vh;
+    display:flex;
+    gap:25px;
+    margin-bottom:25px;
+    font-size:24px ;
+}
+
+.answers:hover{
+    border: solid black 1px;
+}
+.answers{
+    display:flex;
+    gap:25px;
+    padding-bottom: 25px;
+}
+
+#quiz{
+    padding:10px;
+    border:2.5px solid black;
+    padding-left:50px; 
+    gap:25px;
+}
+
+#submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left:50px;
+    bottom:100px;
+    margin-top: 50px;
+    border:solid 2px black;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    font-size: 25px;
+    font-size: 25px;
+    width: 250px;
+    height: 120px; 
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#submit:hover{
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+    transform: scale(1.01);
+    transition: ease 0.25s;
+}
+
+#refresh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    vertical-align:bottom;
+    right:50px;
+    bottom:100px;
+    border:solid 2px black;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    font-size: 25px;
+    width: 250px;
+    height: 120px; 
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+#refresh:hover{
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+    transform: scale(1.01);
+    transition: ease 0.25s;
+}
+
+#results{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-top: 50px;
+    border:solid 2px black;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    font-size: 25px;
+    width: 246px;
+    height: 116px; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.center{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    top:80px;
+}

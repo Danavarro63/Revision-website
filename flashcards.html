@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flashcards</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="flashcards-style.css">
+    </head>
+   
+    <body>
+        <header> <!--opens the header -->
+            <div class="header"> <!-- links to the header class within the css file -->
+                <div class = "innerheader"> <!-- links to the inner header class within the css file -->
+                    <div class="logo" > 
+                        <h1>A Level Computer Science revision</h1> <!-- the title for the header-->
+                    </div>
+                    <ul class= "navigation"> <!-- links to the navigation class within the css file -->
+                        <a href="website.html" class = "navigation-link" ><li>home</li></a> <!-- creates the small home button -->
+                    </form>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="flex-card">
+        <div class="card">
+            <div class="card__inner">
+                <div class="card__face card__face--front">
+                    <textarea readonly class = "textbox-template">
+                        
+This is the frontsize of your flashcard
+                        
+Click once to edit one side of your flashcard
+
+Double Click to turn over Your flashcard</textarea>
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="card__content">
+                        <textarea readonly class = "textbox2-template" >
+This is the backside of your flashcard
+
+Click once to edit one side of your flashcard                            
+
+Double Click to turn over Your flashcard
+                        </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <textarea  id = "scratchpad" class = "textbox"> </textarea>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <textarea  id = "scratchpad2" class = "textbox2"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <textarea  id = "scratchpad3" class = "textbox"> </textarea>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <textarea  id = "scratchpad4" class = "textbox2"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <textarea  id = "scratchpad5" class = "textbox"> </textarea>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <textarea  id = "scratchpad6" class = "textbox2"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <textarea  id = "scratchpad7" class = "textbox"> </textarea>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <textarea  id = "scratchpad8" class = "textbox2"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        <script src="flashcards.js"></script>
+    </body>
+</html>
